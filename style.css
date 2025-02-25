@@ -96,6 +96,7 @@ header{
 .productos a{
     display: block;
     font-family: "DM Sans", serif;
+    font-size: medium;
     color: white;
     text-decoration: none;
     text-align: center;
