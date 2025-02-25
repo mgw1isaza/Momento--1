@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+/*nav*/
+.barranav{
+    background-color: #BC467F;
+    border-radius: 20px;
+    padding: 20px;
+}
+.barranav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    font-family: "DM Sans", serif;
+    font-size: larger;
+}
+.barranav a{
+    text-decoration: none;
+    color: #0E3A5B;
+}
+.barranav a:hover{
+    background-color: #B61059; 
+    border-radius: 15px;
+}
+
+/*nuestra importancia*/
+.nuestra-importancia{
+    text-align: center;
+    align-items: center;
+    background-color: #F2AAC7;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.nuestra-importancia img{
+    width: 100%;
+}
+.nuestra-importancia h1{
+    color: white;
+    font-family: "DM Sans", serif;
+    font-size: 70px;
+}
+.nuestra-importancia a{
+    display: inline-block;
+    color: #0E3A5B;
+    text-decoration: none;
+    font-family: "DM Sans", serif;
+    font-size: 35px;
+}
+.nuestra-importancia a:hover{
+    background-color: #B61059;
+    border-radius: 15px;
+}
+/*productos*/
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0E3A5B;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.productos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2AAC7;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px #B61059; 
+}
+.productos img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.productos a{
+    display: block;
+    font-family: "DM Sans", serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
