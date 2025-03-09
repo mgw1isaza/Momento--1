@@ -39,6 +39,14 @@ header{
     background-color: #B61059; 
     border-radius: 15px;
 }
+.menu-hamburguesa{
+    display: none; 
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #0E3A5B;
+}
 
 /*nuestra importancia*/
 .nuestra-importancia{
@@ -66,7 +74,7 @@ header{
 }
 .nuestra-importancia a:hover{
     background-color: #B61059;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 /*productos*/
 .productos{
@@ -203,7 +211,160 @@ header{
 }
 
 .nuevos_productos img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
  /*footer*/
+footer{
+    background-color:  #BC467F;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    font-family: "Work Sans", serif;
+    font-size: medium;
+    text-decoration: none;
+}
+footer a{
+    color: white;
+    font-family: "Work Sans", serif;
+    font-size: medium;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    background-color: #0E3A5B;
+    border-radius: 5px;
+}
+/*responsive para celular*/
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 120px; 
+    }
+
+    /* Navbar */
+    .barranav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #BC467F;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 200px; 
+    }
+    .barranav.active {
+        display: flex;
+    }
+    .barranav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    .menu-hamburguesa {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #0E3A5B;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Nuestra Importancia */
+    .nuestra-importancia h1 {
+        font-size: 40px; 
+    }
+
+    .nuestra-importancia a {
+        font-size: 25px;
+    }
+
+    /* Productos */
+    .productos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .productos div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .productos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Servicios */
+    .contenido_servicios {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .servicios h2 {
+        font-size: 50px;
+    }
+
+    .texto h3 {
+        font-size: 35px;
+    }
+
+    .texto p {
+        font-size: 18px;
+    }
+
+    .servicios a {
+        font-size: 30px;
+    }
+
+    .servicios img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Nuevos productos */
+    .productos_nuevos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .productos_nuevos div {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nuevos_productos h3 {
+        font-size: 40px;
+    }
+
+    .nuevos_productos a {
+        font-size: 30px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer p,
+    footer a {
+        font-size: small;
+    }
+}
